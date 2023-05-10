@@ -46,15 +46,6 @@ const onButton = document.getElementById("on");
 const offButton = document.querySelector("button:not(#on)");
 onButton.addEventListener("click", function() {
   onButton.classList.toggle("off");
-  onButton.classList.toggle("on");
-  offButton.classList.toggle("on");
-  offButton.classList.toggle("off");
-});
-offButton.addEventListener("click", function() {
-  offButton.classList.toggle("off");
-  offButton.classList.toggle("on");
-  onButton.classList.toggle("on");
-  onButton.classList.toggle("off");
 });
 </script>
 </body>
