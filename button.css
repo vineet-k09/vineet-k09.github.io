@@ -8,10 +8,6 @@ button {
   border: solid rgb(68, 68, 255) 2px;
   height: 30px;
   width: 110px;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom:10px;
-  margin-right: 10px;
   border-radius: 15px 15px 15px 15px;
   transition: 3s;
 }
