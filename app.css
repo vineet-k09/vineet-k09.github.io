@@ -154,3 +154,6 @@ nav a:hover  {
     flex: 0 0 100vh;
     height: auto;
 }
+.social a {
+    margin-right: 25px;
+}
