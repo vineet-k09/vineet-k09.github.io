@@ -38,8 +38,10 @@ main {
     padding-top: 40px;
     padding-left: 25px; 
     padding-right: 25px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     background-image: url("bg_start.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box h1 {
     text-align: center;
@@ -173,4 +175,7 @@ nav a:hover  {
 }
 .social a {
     margin-right: 25px;
+}
+.aboutMe {
+    margin-top: 5%;
 }
