@@ -1,37 +1,48 @@
 body {
     background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
-    color: white;
+    /* color: white; */
     font-family: Arial,Helvetica,sans-serif;
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    overflow-x: hidden;
 }
 * {
     scroll-behavior: smooth;
     margin-block-start: 0;
 }
+.bg {
+    background-image: url("bg_start.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 nav  {
     background-color: #2c3139;
-    width: 100%;
+    /* width: 99.59vw; */
     height: 70px;
     align-items: center;
+}
+main {
+    background-color: black;
+    /* width: 100vw; */
+    /* position: absolute; */
 }
 .box  {
     background-color: #2c3139;
     border-radius: 20px;
-    max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 20px;
-    padding: 10px;
+    padding: 40px 25px 10px 25px;
     line-height: 30px;
     padding-top: 40px;
     padding-left: 25px; 
     padding-right: 25px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
+    background-image: url("bg_start.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box h1 {
     text-align: center;
@@ -40,12 +51,14 @@ hr {
     box-shadow: inset 0 0 2px 0 black;
     height: 3px;
     border-radius: 20px;
+    width: 80vw;
     background-color: white;
 }
 .box p {
     line-height: 40px;
 }
 .name {
+    color: white;
     text-align: end;
     height: 90vh;
     min-height: 90vh;
@@ -56,7 +69,8 @@ hr {
     position: relative;
     margin-block-start: 0;
     margin-block-end: 0;
-    top: 70%;
+    top: 80%;
+    right: 5%;
     font-family: monospace;
 }
 .name h1 {
@@ -87,7 +101,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 @media screen and (prefers-reduced-motion: reduce) {
     /* apply alternative styling for users who prefer reduced motion */body::-webkit-scrollbar {
-        width: 12px;
+        width: 12px;    
 }   
     body::-webkit-scrollbar-thumb {
         background: #ddd;
@@ -145,6 +159,12 @@ nav a:hover  {
     width: 82vw;
     scrollbar-width: none;
 }
+.work .contents {
+    display: flex;
+    overflow-x: scroll;
+    width: 82vw;
+    scrollbar-width: none;
+}
 .contents::-webkit-scrollbar {
     display: none;
 }
@@ -156,4 +176,7 @@ nav a:hover  {
 }
 .social a {
     margin-right: 25px;
+}
+.aboutMe {
+    margin-top: 5%;
 }
