@@ -43,6 +43,7 @@ main {
     background-image: url("bg_start.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .box h1 {
     text-align: center;
