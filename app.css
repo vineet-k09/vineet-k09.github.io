@@ -15,6 +15,7 @@ body {
     background-image: url("bg_start.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 nav  {
     background-color: #2c3139;
