@@ -3,6 +3,7 @@ body {
   overflow: hidden;
 }
 button {
+  cursor: pointer;
   overflow: hidden;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
   border: solid rgb(68, 68, 255) 2px;
