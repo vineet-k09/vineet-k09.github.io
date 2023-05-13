@@ -142,14 +142,13 @@ a:hover {
     grid-row-end: 2; 
 }
 .social {
-    margin:0px;
-    font-size: 20px;
-    padding: 20px 25px 5% 25px;
-    line-height: 40px;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
     background-image: url("images/bg_start.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 180px;
 }
 .social h1 {
     text-align: center;
@@ -157,14 +156,22 @@ a:hover {
 .social ol {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap:wrap-reverse;
 }
-.social li:first-of-type {
-    margin-left: -40px;
+ol li:first-of-type {
+    margin-left: -34px;
+}
+#cdpen {
+    margin-top: 2.8px;
+    height: 38px;
+    width: 38px;
+}
+.social img {
+    width: 40px;
+    height: 40px;
 }
 .social a {
-    margin-right: 25px;
+    margin-right: 5px;
 }
 @media (max-width: 768px) {
     .aboutMe {
