@@ -141,24 +141,20 @@ a:hover {
     grid-row-start: 2; 
     grid-row-end: 2; 
 }
-.social {
+.footer {
     margin: 0px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 0px 0px;
     background-image: url("images/bg_start.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 180px;
 }
-.social h1 {
-    text-align: center;
-}
 .social ol {
     list-style-type: none;
     display: flex;
-    flex-wrap:wrap-reverse;
 }
-ol li:first-of-type {
+.social ol li:first-of-type {
     margin-left: -34px;
 }
 #cdpen {
