@@ -304,19 +304,24 @@ iframe {
     border: none;
 }
 /* resume */
+.resume h1 {
+    font-size: 45px;
+}
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
     color: #45505b;
 }
 .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #ffcc00;
+    padding: 0px 0 20px 20px;
+    margin-top: -10px;
+    border-left: 5px double #ffcc00;
     position: relative;
 }
+
 .resume .resume-item h4 {
     line-height: 18px;
     font-size: 18px;
@@ -342,6 +347,9 @@ iframe {
 }
 .resume .resume-item:last-child {
     padding-bottom: 0;
+    border-bottom: solid 5px #ffcc00;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
 }
 .resume .resume-item::before {
     content: "";
@@ -349,8 +357,8 @@ iframe {
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    left: -9px;
-    top: 0;
+    left: -10.5px;
+    top: -15px;
     background: #fff;
     border: 2px solid #ffcc00;
 }
@@ -360,14 +368,16 @@ iframe {
 /* social */
 .form-control {
     display:flex;
-    align-items: center;
     width:100%;
+    margin: 5px;
     padding:.375rem .75rem;
     line-height:1.5;
     border:1px solid #ced4da;
 }
 .contact .php-email-form {
-    width:max-content;
+    left: 20%;
+    position: relative;
+    width: 55%;
     background: #fff;
 }
 .contact .php-email-form .form-group {
@@ -433,11 +443,14 @@ iframe {
   .contact .php-email-form button[type=submit] {
     background: #FFCC00;
     border: 0;
-    padding: 10px 35px;
+    padding: 18px 35px;
     color: #fff;
     transition: 0.4s;
     border-radius: 50px;
-  }
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .contact .php-email-form button[type=submit]:hover {
     background: #FFD700;
     cursor: pointer !important;
