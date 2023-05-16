@@ -1,6 +1,21 @@
-* {
+*,::after,::before {
     scroll-behavior: smooth;
+    box-sizing:border-box
 }
+.row>*{flex-shrink:0;
+    width:100%;
+    max-width:100%;
+    padding-right:calc(var(--bs-gutter-x) * .5);
+    padding-left:calc(var(--bs-gutter-x) * .5);
+    margin-top:var(--bs-gutter-y)}
+    .row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}
+    @media (min-width:768px){
+        .col-md-6{flex:0 0 auto;width:50%}
+    }
+    @media (prefers-reduced-motion:reduce){.form-control{transition:none}
+}
+.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:.375rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+ 
 h1,
 h1,
 h3,
@@ -9,6 +24,29 @@ h5,
 h6 {
     font-family: "Raleway", sans-serif;
 }
+@media (min-width:992px){
+    .mt-lg-0{margin-top:0!important}}
+.mt-5{margin-top:3rem!important}
+.align-items-center{align-items:center!important}
+.col-lg-6{flex:0 0 auto;width:50%}
+.justify-content-center{justify-content:center!important}
+.col-lg-8{flex:0 0 auto;width:66.66666667%}
+.d-lg-none{display:none!important}
+.flex-column{flex-direction:column!important}
+.container {--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto} 
+@media (min-width:576px){.container{max-width:540px}
+}
+@media (min-width:768px){.container{max-width:720px}
+}
+@media (min-width:992px){.container{max-width:960px}
+}
+@media (min-width:1200px){.container {max-width:1140px}
+}
+@media (min-width:1400px){.container {max-width:1320px}
+}
+.pt-4{padding-top:1.5rem!important}
+.pt-lg-0{padding-top:0!important}
+.pb-0{padding-bottom:0!important}
 a {
     color: #0563bb;
     text-decoration: none;
@@ -264,54 +302,66 @@ iframe {
     border-radius: 20px;
     border: none;
 }
-/* social */
-.contact .info {
-    width: 100%;
-    background: #fff;
-  }
-  
-  .contact .info i {
-    font-size: 20px;
-    color: #FFD700;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: #eef7ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .contact .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
+/* resume */
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #45505b;
-  }
-  
-  .contact .info p {
-    padding: 0 0 0 60px;
-    margin-bottom: 0;
-    font-size: 14px;
-    color: #728394;
-  }
-  
-  .contact .info .email,
-  .contact .info .phone {
-    margin-top: 40px;
-  }
-  
-  .contact .info .email:hover i,
-  .contact .info .address:hover i,
-  .contact .info .phone:hover i {
-    background: #FFCC00;
-    color: #fff;
-  }
-  
-  .contact .php-email-form {
+}
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #ffcc00;
+    position: relative;
+}
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #ffcc00;
+}
+.resume .bx {
+    vertical-align: middle;
+}
+/* social */
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact .php-email-form {
     width: 100%;
     background: #fff;
   }
@@ -427,7 +477,18 @@ footer .social-links a:hover {
     text-decoration: none;
 }
 /* reach to top button */
+.back-to-top a:hover {
+    text-decoration: none;
+}
+.back-to-top a {
+    text-decoration: none;
+}
+.back-to-top:hover {
+    text-decoration: none;
+}
 .back-to-top {
+    box-shadow: 0 0 5px 0 black;
+    text-decoration: none;
     position: fixed;
     visibility: hidden;
     opacity: 0;
