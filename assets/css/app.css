@@ -231,11 +231,10 @@ body {
     text-align: center;
 }
 hr {
-    box-shadow: inset 0 0 2px 0 black;
     height: 3px;
     border-radius: 20px;
     width: 80vw;
-    background-color: white;
+    background-color: #ffd700;
 }
 .aboutMe {
     margin-top: 5%;
