@@ -1,8 +1,11 @@
 body {
   background-color: whitesmoke;
-  overflow: hidden;
+}
+footer {
+  margin-top: 80vh;
 }
 button {
+  overflow: hidden;
   cursor: pointer;
   overflow: hidden;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
