@@ -21,9 +21,9 @@
   $success = mail($to, $subject, $email_body, $headers);
 
   // Redirect to a thank you page
-  if ($success) {
+if ($success) {
     header('Location: thank_you.html');
-  } else {
+} else {
     echo 'Oops! Something went wrong.';
   }
 ?>
