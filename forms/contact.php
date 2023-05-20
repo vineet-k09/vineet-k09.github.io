@@ -23,6 +23,7 @@
   // Redirect to a thank you page
 if ($success) {
     header('Location: thank_you.html');
+    exit;
 } else {
     echo 'Oops! Something went wrong.';
   }

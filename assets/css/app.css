@@ -587,20 +587,6 @@ section {
 .portfolio-details .portfolio-details-slider img {
     width: 100%;
  }
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
- }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #0563bb;
- }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #0563bb;
- }
 .portfolio-details .portfolio-info {
     padding: 30px;
     box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
@@ -653,26 +639,6 @@ iframe {
 }
 .contact .php-email-form .form-group {
     padding-bottom: 8px;
-}
-.contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-}
-.contact .php-email-form .error-message br+br {
-    margin-top: 25px;
-}
-.contact .php-email-form .sent-message {
-    display: none;
-    border-radius: 20px;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
 }
 .contact .php-email-form .loading {
     display: none;
