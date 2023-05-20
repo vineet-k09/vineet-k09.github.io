@@ -82,31 +82,4 @@ document.addEventListener('DOMContentLoaded', function(){
   contentType: 'html',
   });
 });
-/* Mobile nav toggle*/ 
-on('click', '.mobile-nav-toggle', function(e) {
-  select('body').classList.toggle('mobile-nav-active')
-  this.classList.toggle('bi-list')
-  this.classList.toggle('bi-x')
-})
-on('click', '.scrollto', function(e) {
-  if (select(this.hash)) {
-    e.preventDefault()
-    let body = select('body')
-    if (body.classList.contains('mobile-nav-active')) {
-      body.classList.remove('mobile-nav-active')
-      let navbarToggle = select('.mobile-nav-toggle')
-      navbarToggle.classList.toggle('bi-list')
-      navbarToggle.classList.toggle('bi-x')
-    }
-    scrollto(this.hash)
-  }
-}, 
-true)
-window.addEventListener('load', () => {
-if (window.location.hash) {
-  if (select(window.location.hash)) {
-      scrollto(window.location.hash)
-  }
-}
-});
 })()
