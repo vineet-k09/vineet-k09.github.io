@@ -82,4 +82,12 @@ document.addEventListener('DOMContentLoaded', function(){
   contentType: 'html',
   });
 });
+// aos
+AOS.init({
+  duration: 1000, // Animation duration in milliseconds
+  offset: 200, // Offset (in pixels) from the original trigger point
+  easing: 'ease-in-out', // Animation easing (e.g., 'ease', 'linear', 'ease-in-out')
+  delay: 50, // Delay (in milliseconds) between animations
+  once: true // Whether to trigger animations only once
+});
 })()
