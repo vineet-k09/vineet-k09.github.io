@@ -40,6 +40,11 @@ body {
     body {
       cursor: auto;
     }
+    .cursor,
+    .curContain,
+    .curContain.large {
+        display: none;
+    }
 }
 .jqueryFireFly {
     width: 32px !important;
