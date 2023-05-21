@@ -26,6 +26,8 @@ body {
 .curContain.large {
     height: 70px;
     width: 70px;
+    transition: 1s;
+    border-radius: 30px !important;
 }
 .cursor {
     width: 10px;
@@ -39,98 +41,13 @@ body {
 @media (max-width: 768px) {
     body {
       cursor: auto;
-    }
-    .cursor,
-    .curContain,
-    .curContain.large {
-        display: none;
-    }
+    } 
 }
 .jqueryFireFly {
     width: 32px !important;
     height: 32px !important;
     background: url("assets/img/New Piskel.png") !important;
     background-image: url("assets/img/New Piskel.png") !important;
-}
-.row>*{
-    flex-shrink:0;
-    width:100%;
-    max-width:100%;
-    padding-right:calc(var(--bs-gutter-x) * .5);
-    padding-left:calc(var(--bs-gutter-x) * .5);
-    margin-top:var(--bs-gutter-y)
-}
-.row{
-    --bs-gutter-x:1.5rem;
-    --bs-gutter-y:0;
-    display:flex;
-    flex-wrap:wrap;
-    margin-top:calc(-1 * var(--bs-gutter-y));
-    margin-right:calc(-.5 * var(--bs-gutter-x));
-    margin-left:calc(-.5 * var(--bs-gutter-x))
-}
-@media (min-width:768px){
-        .col-md-6{
-            flex:0 0 auto;
-            width:50%
-    }
-}
-@media (prefers-reduced-motion:reduce){
-    .form-control{
-        transition:none;
-    }
-}
-h1,
-h1,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Raleway", sans-serif;
-}
-@media (min-width:992px){
-    .mt-lg-0{
-        margin-top:0!important
-    }
-}
-.mt-5{
-    margin-top:3rem!important
-}
-.align-items-center{
-    align-items:center!important
-}
-.col-lg-4{
-    flex:0 0 auto;
-    width:33.33333333%
-}
-.col-md-6{
-    flex:0 0 auto;
-    width:50%}
-.col-lg-6{
-    flex:0 0 auto;
-    width:50%
-}
-.justify-content-center{
-    justify-content:center!important
-}
-.col-lg-8{
-    flex:1 0 auto;
-    width:100.66666667%
-}
-.d-lg-none{
-    display:none!important
-}
-.flex-column{
-    flex-direction:column!important
-}
-.pt-4{
-    padding-top:1.5rem!important
-}
-.pt-lg-0{
-    padding-top:0!important
-}
-.pb-0{
-    padding-bottom:0!important
 }
 a {
     color: yellow;
@@ -272,7 +189,6 @@ a:hover {
 }
 .nav-menu a:hover span,
 .nav-menu li:hover>a span {
-    transition: 1s;
     display: block;
 }
 /* background */
@@ -747,6 +663,7 @@ footer .social-links a:hover {
 .back-to-top {
     box-shadow: 0 0 5px 0 black;
     text-decoration: none;
+    /* position: fixed; */
     position: fixed;
     visibility: hidden;
     opacity: 0;
@@ -759,6 +676,8 @@ footer .social-links a:hover {
     height: 40px;
     border-radius: 50px;
     transition: all 0.4s;
+    animation: comein 1s ease-in ;
+    animation-iteration-count: 1;
 }  
 .back-to-top i {
     font-size: 28px;
@@ -887,4 +806,85 @@ body::-webkit-scrollbar-thumb:hover {
           -ms-transform: rotate(360deg);
           transform: rotate(360deg);
     }
+}
+
+.row>*{
+    flex-shrink:0;
+    width:100%;
+    max-width:100%;
+    padding-right:calc(var(--bs-gutter-x) * .5);
+    padding-left:calc(var(--bs-gutter-x) * .5);
+    margin-top:var(--bs-gutter-y)
+}
+.row{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:calc(-1 * var(--bs-gutter-y));
+    margin-right:calc(-.5 * var(--bs-gutter-x));
+    margin-left:calc(-.5 * var(--bs-gutter-x))
+}
+@media (min-width:768px){
+        .col-md-6{
+            flex:0 0 auto;
+            width:50%
+    }
+}
+@media (prefers-reduced-motion:reduce){
+    .form-control{
+        transition:none;
+    }
+}
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+@media (min-width:992px){
+    .mt-lg-0{
+        margin-top:0!important
+    }
+}
+.mt-5{
+    margin-top:3rem!important
+}
+.align-items-center{
+    align-items:center!important
+}
+.col-lg-4{
+    flex:0 0 auto;
+    width:33.33333333%
+}
+.col-md-6{
+    flex:0 0 auto;
+    width:50%}
+.col-lg-6{
+    flex:0 0 auto;
+    width:50%
+}
+.justify-content-center{
+    justify-content:center!important
+}
+.col-lg-8{
+    flex:1 0 auto;
+    width:100.66666667%
+}
+.d-lg-none{
+    display:none!important
+}
+.flex-column{
+    flex-direction:column!important
+}
+.pt-4{
+    padding-top:1.5rem!important
+}
+.pt-lg-0{
+    padding-top:0!important
+}
+.pb-0{
+    padding-bottom:0!important
 }
