@@ -82,12 +82,37 @@ document.addEventListener('DOMContentLoaded', function(){
   contentType: 'html',
   });
 });
+
 // aos
 AOS.init({
-  duration: 1000, // Animation duration in milliseconds
-  offset: 200, // Offset (in pixels) from the original trigger point
-  easing: 'ease-in-out', // Animation easing (e.g., 'ease', 'linear', 'ease-in-out')
-  delay: 50, // Delay (in milliseconds) between animations
-  once: true // Whether to trigger animations only once
+  duration: 1400,
+  offset: 0, 
+  easing: 'ease-in',
+  delay: 50, 
+  once: true
 });
+// custom cursor
+var cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', function(e) {
+cursor.style.left = e.clientX - 5 + 'px';
+cursor.style.top = e.clientY - 5 + 'px';
+});
+const linkSpread = document.querySelectorAll("a");
+const curContain = document.querySelector(".curContain");
+document.addEventListener('mousemove', function(f) {
+  let leftPos = f.pageX;
+  let topPos = f.clientY;
+  curContain.style.left = leftPos + "px";
+  curContain.style.top = topPos + "px";
+})
+linkSpread.forEach(linkSpread => {
+  linkSpread.addEventListener('mouseenter', () => {
+    curContain.classList.add("large");
+  })
+})
+linkSpread.forEach(linkSpread => {
+  linkSpread.addEventListener('mouseleave', () => {
+    curContain.classList.remove("large");
+  })
+})
 })()
