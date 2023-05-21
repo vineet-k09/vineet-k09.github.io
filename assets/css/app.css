@@ -36,6 +36,11 @@ body {
     border-radius: 50%;
     pointer-events: none;
 }
+@media (max-width: 768px) {
+    body {
+      cursor: auto;
+    }
+}
 .jqueryFireFly {
     width: 32px !important;
     height: 32px !important;
