@@ -16,18 +16,20 @@ body {
     position: fixed;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    rotate: 45deg;
     border: 2px solid #ffcc00;
     left: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-70%);
     pointer-events: none;
-    transition: width 1000ms, height 1000ms;
+    transition: width 250ms, height 500ms;
 }
 .curContain.large {
     height: 70px;
     width: 70px;
-    transition: 1s;
-    border-radius: 30px !important;
+    transition: 0.5s;
+    rotate: -45deg;
+    transform: translate(0%, -70%);
+    border-radius: 50px !important;
 }
 .cursor {
     width: 10px;
@@ -438,7 +440,7 @@ section {
     position: absolute;
     top: 35px;
     left: 35px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
     border-top: 3px solid black;
     border-left: 3px solid black;
     transition: all 0.5s ease 0s;
@@ -452,7 +454,7 @@ section {
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-bottom: 3px solid black;
     border-right: 3px solid black;
     transition: all 0.5s ease 0s;
