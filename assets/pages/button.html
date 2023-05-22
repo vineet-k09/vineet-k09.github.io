@@ -2,9 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <script src="../js/app.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- <meta name="description" content=""> -->
-    <!-- <meta name="keywords" content=""> -->
     <meta name="author" content="Vineet">
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="../vendor/boxicons/css/boxicons.min.css">
@@ -66,6 +65,40 @@
       &copy; Copyright 2023 <strong><span>Vineet Kushwaha</span></strong>. All rights reserved       
   </div>
 </footer>
+
+<div class="curContain"></div>
+<div class="cursor"></div>
+<script>
+  
+// custom cursor
+var cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', function(e) {
+cursor.style.left = e.clientX - 5 + 'px';
+cursor.style.top = e.clientY - 5 + 'px';
+});
+var delayInMs = 50;
+const linkSpread = document.querySelectorAll("a");
+const curContain = document.querySelector(".curContain");
+document.addEventListener('mousemove', curMover); 
+function curMover(f) {
+  setTimeout(function(){
+  let leftPos = f.pageX;
+  let topPos = f.clientY;
+  curContain.style.left = leftPos + "px";
+  curContain.style.top = topPos + "px";
+}, delayInMs);
+};
+linkSpread.forEach(linkSpread => {
+  linkSpread.addEventListener('mouseenter', () => {
+    curContain.classList.add("large");
+  })
+})
+linkSpread.forEach(linkSpread => {
+  linkSpread.addEventListener('mouseleave', () => {
+    curContain.classList.remove("large");
+  })
+})
+</script>
 <script>
 const onButton = document.getElementById("on");
 const offButton = document.querySelector("button:not(#on)");
