@@ -43,6 +43,8 @@ body {
     rotate: -45deg;
     transform: translate(0%, -70%);
     border-radius: 50px !important;
+    opacity: .3;
+    background-color: #ffcc00;
 }
 .cursor {
     width: 10px;
