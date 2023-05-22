@@ -4,6 +4,16 @@
     box-sizing:border-box;
     cursor: none;
 }
+*::selection:not(a,p a) {
+    background-color: #161f28; 
+    color: #ffcc00;
+}
+a::selection,
+i::selection,
+a em::selection {
+    background-color: #ffcc00;
+    color: black !important;
+}
 body {
     margin: 0;
     padding: 0;
@@ -322,12 +332,6 @@ section {
 /* resume */
 .resume h1 {
     font-size: 45px;
-}
-.resume a {
-    color: yellow;
-}
-.resume a:hover {
-    color: #ffd700;
 }
 .resume .resume-title {
     font-size: 26px;
