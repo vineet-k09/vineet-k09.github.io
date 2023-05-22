@@ -97,14 +97,18 @@ document.addEventListener('mousemove', function(e) {
 cursor.style.left = e.clientX - 5 + 'px';
 cursor.style.top = e.clientY - 5 + 'px';
 });
+var delayInMs = 50;
 const linkSpread = document.querySelectorAll("a");
 const curContain = document.querySelector(".curContain");
-document.addEventListener('mousemove', function(f) {
+document.addEventListener('mousemove', curMover); 
+function curMover(f) {
+  setTimeout(function(){
   let leftPos = f.pageX;
   let topPos = f.clientY;
   curContain.style.left = leftPos + "px";
   curContain.style.top = topPos + "px";
-})
+}, delayInMs);
+};
 linkSpread.forEach(linkSpread => {
   linkSpread.addEventListener('mouseenter', () => {
     curContain.classList.add("large");

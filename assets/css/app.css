@@ -22,6 +22,9 @@ body {
     background-color: #111820;
     color: white;
 }
+.hid {
+    display: none !important;
+}
 .curContain {
     position: fixed;
     width: 40px;
