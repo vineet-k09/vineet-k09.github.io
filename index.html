@@ -7,7 +7,7 @@
     <link rel="icon" href="assets/img/icon.ico">
     <meta name="author" content="Vineet">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <meta name="description" content="This website is the personal portfolio of Vineet Kushwaha i.e. Me and every information provided here is true to the extent of my knowledge">
+    <meta name="description" content="This website is the personal project of Vineet Kushwaha i.e. Me and every information provided here is true to the extent of my knowledge">
 
     <!-- css -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -27,11 +27,11 @@
 <header id="header" style="display:flex" class="flex-column justify-content-center">
     <nav id="navbar" class="nav-menu">
         <ul>
-            <li><a href="#bg"><i class="bx bx-home scrollto"></i> <span>Home</span></a></li>
-            <li><a href="#aboutMe" ><i class="bx bx-user scrollto"></i> <span>About</span></a></li>
-            <li><a href="#resume"><i class="bx bx-book-content scrollto"></i> <span>Resume</span></a></li>
-            <li><a href="#portfolio"><i class="bx bx-server scrollto"></i> <span>Projects</span></a></li>
-            <li><a href="#contact"><i class="bx bx-envelope scrollto"></i> <span>Contact</span></a></li>
+            <li><a href="#bg" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#aboutMe" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Resume</span></a></li>
+            <li><a href="#project" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
+            <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
         </ul>
     </nav>
 </header>
@@ -173,23 +173,23 @@
   </div>
 </section>
 
-<!-- portfolio -->
-<section data-aos="fade-up" id="portfolio" class="portfolio">
+<!-- project -->
+<section data-aos="fade-up" id="project" class="project">
   <div class="container">
     <div class="section-title">
       <h1>PROJECTS</h1><hr>
     </div>
-    <!-- <div class="row"><div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100"><ul id="portfolio-flters"><li data-filter="*" class="filter-active">All</li><li data-filter=".filter-app">App</li><li data-filter=".filter-card">Card</li><li data-filter=".filter-web">Web</li></ul></div></div> -->
-    <div class="row portfolio-container">
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+    <!-- <div class="row"><div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100"><ul id="project-flters"><li data-filter="*" class="filter-active">All</li><li data-filter=".filter-app">App</li><li data-filter=".filter-card">Card</li><li data-filter=".filter-web">Web</li></ul></div></div> -->
+    <div class="row project-container">
+      <div class="col-lg-4 col-md-6 project-item filter-app">
         <div class="wrap-wrap">
-        <div class="portfolio-wrap"> 
+        <div class="project-wrap"> 
           <iframe src="assets/pages/button.html" width="100%" height="200px"></iframe>
-          <div class="portfolio-info">
+          <div class="project-info">
           <h4> 1 <a href="assets/pages/button.html" target="_blank"><i class="bx bx-link-" style="vertical-align: bottom;"></i></a></h4>
           <p>Simple button animation using basic HTML and CSS <br> Code Snippet<a href="https://vineetk-09.github.io/assets/pages/button.html" target="_blank"> at CodePen</a></p>
-          <div class="portfolio-links">
-            <a href="https://vineetk-09.github.io/assets/pages/button.html" target="_blank" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
+          <div class="project-links">
+            <a href="https://vineetk-09.github.io/assets/pages/button.html" target="_blank" title="project Details"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
         </div>
@@ -273,5 +273,6 @@ $(document).ready(function() {
     $.firefly();
 });
 </script>
+
 </body>
 </html>
