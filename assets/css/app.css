@@ -412,6 +412,7 @@ section {
     border-radius: 10px;
  }
 .project .wrap-wrap {
+    width: 75%;
     padding: 2.1px 3.1px;
     border: 5px solid #383c4e;
     border-radius: 10px;
@@ -876,9 +877,6 @@ h6 {
     flex:0 0 auto;
     width:33.33333333%
 }
-.col-md-6{
-    flex:0 0 auto;
-    width:50%}
 .col-lg-6{
     flex:0 0 auto;
     width:50%
