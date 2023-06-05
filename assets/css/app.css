@@ -394,29 +394,42 @@ section {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    size: fixed;
-}
-.prpject-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
+    justify-content: space-evenly;
+}
+.project .project-items:hover .project-num .plol {
+    top: 0;
+    left: 1;
+    transition: all 0.8s ease-in-out;
+}
+.project-num .plol {
+    color: #ffcc00;
+    font-size: 100px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    transition: all 0.8s ease-in-out;
+    transform: translate(-8%, 0%);
 }
 .project .project-wrap {
+    display: flex;
     transition: 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    /* background: #ffd700; */
     border-radius: 10px;
- }
-.project .wrap-wrap {
-    padding: 2.1px 3.1px;
-    border: 5px solid #383c4e;
-    border-radius: 10px;
+    border: 5px #111820 solid;
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 300px;
+    max-height: 300px;
+}
+.project .project-wrap img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
 }
 .project .project-wrap::before {
     content: "";
@@ -429,7 +442,7 @@ section {
     transition: all ease-in-out 0.3s;
     z-index: 2;
     opacity: 0;
- }
+}
 .project .project-wrap .project-info {
     opacity: 0;
     position: absolute;
@@ -446,7 +459,7 @@ section {
     align-items: center;
     background: linear-gradient(to top, #ffcc00, transparent);
     background-size: 100% 175%;
- }
+}
 .project .project-wrap .project-info::before {
     display: block;
     content: "";
@@ -474,9 +487,6 @@ section {
     border-right: 3px solid black;
     transition: all 0.5s ease 0s;
     z-index: 9994;
- }
-.wrap2 {
-    width: 40%;
 }
 .project .project-wrap .project-info h4 {
     font-size: 20px;
@@ -484,26 +494,26 @@ section {
     font-weight: 600;
  }
 .project .project-wrap .project-info p {
+    padding: 0 10px;
     color: black;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 0;
     margin: 0;
- }
+}
 .project .project-wrap .project-links {
     text-align: center;
     z-index: 4;
- }
+}
 .project .project-wrap .project-links a {
     color: black;
     margin: 0 2px;
     font-size: 28px;
     display: inline-block;
     transition: 0.3s;
- }
+}
 .project .project-wrap .project-links a:hover {
     color: #ffcc00;
- }
+}
 .project .project-wrap:hover::before {
     top: 0;
     left: 0;
@@ -511,24 +521,20 @@ section {
     bottom: 0;
     opacity: 1;
 }
-.wrap-wrap:hover {
-    border-color: #ffcc00;
-    transition: 1s;
+.project .project-wrap:hover {
+    border: 5px yellow solid;
 }
-.project .wrap-wrap:hover .project-info {
+.project .project-wrap:hover .project-info {
     opacity: 1;
 }
-.project .wrap-wrap:hover .project-info::before {
+.project .project-wrap:hover .project-info::before {
     top: 15px;
     left: 15px;
 }
-.project .wrap-wrap:hover .project-info::after {
+.project .project-wrap:hover .project-info::after {
     bottom: 15px;
     right: 15px;
 }
-/*--------------------------------------------------------------
-  # project Details
-  --------------------------------------------------------------*/
 .project-details {
     padding-top: 40px;
 }
@@ -565,68 +571,7 @@ section {
 .project-details .project-description p {
     padding: 0;
 }
-/* social */
-.form-control {
-    display:flex;
-    width:100%;
-    margin: 5px;
-    padding:.375rem .75rem;
-    line-height:1.5;
-    border:1px solid #ced4da;
-}
-.contact .php-email-form {
-    left: 20%;
-    position: relative;
-    width: 55%;
-    background: #fff;
-}
-.contact .php-email-form .form-group {
-    padding-bottom: 8px;
-}
-.contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-}
-.contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    animation: animate-loading 1s linear infinite;
-}
-.contact .php-email-form input,
-  .contact .php-email-form textarea {
-    border-radius: 4px;
-    box-shadow: none;
-    font-size: 14px;
-}
-.contact .php-email-form input {
-    height: 44px;
-}
-.contact .php-email-form textarea {
-    padding: 10px 12px;
-}
-.contact .php-email-form button[type=submit] {
-    background: #FFCC00;
-    border: 0;
-    padding: 18px 35px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 50px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.contact .php-email-form button[type=submit]:hover {
-    background: #FFD700;
-    /* cursor: pointer !important; */
-}
+/* cursor: pointer !important; */
 @media (max-width: 768px) {
 .aboutMeMeMe {
     margin-top: 50px;
