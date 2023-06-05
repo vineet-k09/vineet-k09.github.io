@@ -1,14 +1,8 @@
 body, h1, p {
     overflow-x: hidden;
 }
-body {
-    /* color: black; */
-}
 .container {
     background-color: black !important;
-} 
-footer {
-    color: white !important;
 }
 .start {
     height: 400vh;
