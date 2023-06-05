@@ -4,6 +4,10 @@ body {
 footer {
   margin-top: 80vh;
 }
+.bcontainer {
+  display: flex;
+  height: 100vh;
+}
 button {
   overflow: hidden;
   cursor: pointer;

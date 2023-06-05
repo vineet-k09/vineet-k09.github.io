@@ -1,35 +1,14 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-}
 body, h1, p {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
-.flex {
-    display: flex;
-}
 body {
-    font-family: Arial, sans-serif;
-    color: black;  
-    min-height: 100vh; 
-}
-a {
-    text-decoration: none;
+    /* color: black; */
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: black !important;
-}  
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-img {
-    max-width: 100%;
-    height: auto;
+} 
+footer {
+    color: white !important;
 }
 .start {
     height: 400vh;
@@ -53,13 +32,4 @@ img {
 img#mansion {
     margin: 0;
     transform: rotate3d(1, 1, 1, 45deg);
-}
-::-webkit-scrollbar {
-    background-image: linear-gradient(black, purple, blue);
-    max-width: 5px;
-    border: none;
-}
-::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(blue, purple, black);
-    border-radius: 10px;
 }
