@@ -22,8 +22,16 @@ body, h1, p {
 #intro {
     background-color: black;
     height: 400vh;
+    overflow-y: hidden;
 }
 img#mansion {
     margin: 0;
     transform: rotate3d(1, 1, 1, 45deg);
+}
+#hgback {
+    height: 100vh;
+    background-image: url("../images/harry-potter-hogwarts-castle-hd-wallpaper-preview.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }

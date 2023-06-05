@@ -139,8 +139,7 @@ body::-webkit-scrollbar {
     border: none;
 }
 body::-webkit-scrollbar-track {
-    background: #ffffff;
-    display: none;
+    background-image: linear-gradient(purple, blue, white);
     border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb {
