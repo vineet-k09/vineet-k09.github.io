@@ -390,11 +390,12 @@ section {
 }
 
 /* project */
-.project .project-item {
+.project .project-items {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    size: fixed;
 }
 .prpject-items {
     display: flex;
@@ -475,7 +476,6 @@ section {
     z-index: 9994;
  }
 .wrap2 {
-    margin: 0 5%;
     width: 40%;
 }
 .project .project-wrap .project-info h4 {
