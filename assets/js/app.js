@@ -153,5 +153,18 @@ linkSpread.forEach(linkSpread => {
   })
 })
 
+//shadow text
+const ShadowText = document.getElementById('ShadowText');
+const range = 16;
+function updateShadow(e) {
+  const x = Math.round(e.clientX * range / window.innerWidth) - range / 2;
+  const y = Math.round(e.clientY * range / window.innerHeight) - range / 2;
+  gsap.to(ShadowText, {
+    '--x': x,
+    '--y': y,
+  });
+}
+document.body.addEventListener('mousemove', updateShadow);
+
 // end
 })()

@@ -12,6 +12,22 @@ a em::selection {
     background-color: #ffcc00;
     color: black !important;
 }
+:root {
+    --x: -8px;
+    --y: -8px;
+}  
+#ShadowText {
+    color: #fff;
+    font-family: 'Glory', sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    text-shadow:
+      calc(var(--x) * -1) calc(var(--y) * -1) 0px #ffeeaa,
+      calc(var(--x) * -2) calc(var(--y) * -2) 0px #ffdd55,
+      calc(var(--x) * -3) calc(var(--y) * -3) 0px #ffcc00;
+}
 body {
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
@@ -55,6 +71,7 @@ body {
     /* background-color: #ffcc00; */
     background-color: white;
     /* mix-blend-mode: difference; */
+    /* backdrop-filter: invert(100%); */
     border: none;
     z-index: 0;
 }
