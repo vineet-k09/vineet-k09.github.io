@@ -54,6 +54,7 @@ body {
     opacity: .1;
     /* background-color: #ffcc00; */
     background-color: white;
+    /* mix-blend-mode: difference; */
     border: none;
     z-index: 0;
 }
