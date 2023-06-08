@@ -22,6 +22,16 @@ body {
     body .curContain {
         display: none;
     }
+    body .cursor {
+        width: 15px;
+        height: 15px;
+        transition: 0.1s;
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+.displayNone {
+    display: none !important;
 }
 .curContain {
     position: fixed;
@@ -37,12 +47,24 @@ body {
 .curContain.large {
     height: 70px;
     width: 70px;
-    transition: 0.5s;
+    transition: 0.1s;
     rotate: -45deg;
     transform: translate(0%, -70%);
     border-radius: 50px !important;
-    opacity: .3;
-    background-color: #ffcc00;
+    opacity: .1;
+    /* background-color: #ffcc00; */
+    background-color: white;
+    border: none;
+    z-index: 0;
+}
+.selected {
+    background-color: none;
+    position: fixed;
+    z-index: 1100;
+    border-radius: 50px;
+    border: 3px #ffcc00 solid;
+    pointer-events: none;
+    transition: .1s;
 }
 .cursor {
     width: 10px;
@@ -57,6 +79,16 @@ body {
     body {
       cursor: auto;
     } 
+}
+.makegrey {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: .5s;
+}
+.makegrey:hover {
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    transition: .5s;
 }
 .jqueryFireFly {
     width: 32px !important;

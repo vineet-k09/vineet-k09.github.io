@@ -1,6 +1,7 @@
 (function() { 
 "use strict";
-/* Easy selector helper function*/ 
+
+// Easy selector helper function
 const select = (el, all = false) => {
   el = el.trim()
   if (all) {
@@ -9,7 +10,8 @@ const select = (el, all = false) => {
     return document.querySelector(el)
   }
 }
-/* Easy event listener function*/ 
+
+// Easy event listener function
 const on = (type, el, listener, all = false) => {
   let selectEl = select(el, all)
   if (selectEl) {
@@ -20,14 +22,13 @@ const on = (type, el, listener, all = false) => {
     }
   }
 }
-/* Easy on scroll event listener */ 
+
+// Easy on scroll event listener 
 const onscroll = (el, listener) => {
   el.addEventListener('scroll', listener)
 }
 
-  /**
-   * Navbar links active state on scroll
-   */
+// Navbar links active state on scroll
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
@@ -45,7 +46,7 @@ const onscroll = (el, listener) => {
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
-/* Back to top button*/ 
+// Back to top button 
 let backtotop = select('.back-to-top')
 if (backtotop) {
   const toggleBacktotop = () => {
@@ -59,7 +60,7 @@ if (backtotop) {
   onscroll(document, toggleBacktotop)
 }
 
-/* Preloader*/ 
+// Preloader 
 let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -67,7 +68,7 @@ let preloader = select('#preloader');
   });
 }
 
-/*type animation*/ 
+// type animation 
 document.addEventListener('DOMContentLoaded', function(){
   var typed = new Typed('.typed', {
   strings: ['Kushwaha'],
@@ -91,16 +92,46 @@ AOS.init({
 });
 
 // custom cursor
-var cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', function(e) {
-cursor.style.left = e.clientX - 5 + 'px';
-cursor.style.top = e.clientY - 5 + 'px';
-});
-var delayInMs = 50;
-const linkSpread = document.querySelectorAll("a");
+const cursor = document.querySelector('.cursor');
+let elSelected = false;
+document.onmousemove = (ev) => {
+  goto(ev.clientX,ev.clientY);
+}
+const cursorSize = 10;
+const PAD = 8;
+let goto = (x,y) => {
+  if (elSelected) return;
+  cursor.style.left = x - cursorSize / 2 + 'px';
+  cursor.style.top = y - cursorSize / 2 + 'px';
+}
+Array.from(document.getElementsByClassName("selectable")).forEach((el) => {
+  el.onmouseover = (ev) => {
+    const target = ev.currentTarget.getBoundingClientRect();
+    goto(target.x - PAD  + cursorSize / 2, target.y - PAD  + cursorSize / 2);
+    cursor.style.width = target.width + PAD * 2 + 'px';
+    cursor.style.height = target.height + PAD * 2 + 'px';
+    cursor.style.zindex = "-1";
+    cursor.classList.add("selected");
+    cursor.classList.remove("cursor");
+    curContain.classList.add("displayNone");
+    elSelected = true;
+  }
+  el.onmouseleave = () => {
+    cursor.style.width = cursorSize + 'px';
+    cursor.style.height = cursorSize + 'px';
+    cursor.style.zIndex = "9999";
+    cursor.classList.remove("selected");
+    cursor.classList.add("cursor");
+    curContain.classList.remove("displayNone")
+    elSelected = false;
+  }
+})
+
+// curcontain
+var delayInMs = 200;
 const curContain = document.querySelector(".curContain");
-document.addEventListener('mousemove', curMover); 
-function curMover(f) {
+document.addEventListener('mousemove', delayMover); 
+function delayMover(f) {
   setTimeout(function(){
   let leftPos = f.pageX;
   let topPos = f.clientY;
@@ -108,6 +139,9 @@ function curMover(f) {
   curContain.style.top = topPos + "px";
 }, delayInMs);
 };
+
+// link spread
+const linkSpread = document.querySelectorAll("a");
 linkSpread.forEach(linkSpread => {
   linkSpread.addEventListener('mouseenter', () => {
     curContain.classList.add("large");
@@ -118,5 +152,6 @@ linkSpread.forEach(linkSpread => {
     curContain.classList.remove("large");
   })
 })
+
 // end
 })()

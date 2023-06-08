@@ -28,10 +28,10 @@
 <header id="header" style="display:flex" class="flex-column justify-content-center">
     <nav id="navbar" class="nav-menu">
         <ul>
-            <li><a href="#bg" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="#aboutMe" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Resume</span></a></li>
-            <li><a href="#project" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
+            <li class="selectable"><a href="#bg" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li class="selectable"><a href="#aboutMe" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li class="selectable"><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Resume</span></a></li>
+            <li class="selectable"><a href="#project" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
             <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
         </ul>
     </nav>
@@ -43,11 +43,11 @@
     <h1>Vineet <span class="typed" data-typed-items="Kushwaha"></span></h1>
     <p> Data Science Student</p>
     <div class="social-links">
-      <a href="https://codepen.io/Trickster-69" class="codepen"><i class="bx bxl-codepen" target="_blank"></i></a>
-      <a href="https://www.facebook.com/Trickster069/" class="facebook"><i class="bx bxl-facebook" target="_blank"></i></a>
-      <a href="https://www.instagram.com/vineet_k09/" class="instagram"><i class="bx bxl-instagram"></i></a>
-      <a href="https://github.com/vineetk-09" class="github"><i class="bx bxl-github" target="_blank"></i></a>
-      <a href="https://www.linkedin.com/in/vineet-kushwaha-2666b5257/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://codepen.io/Trickster-69" class="codepen"><i class="selectable bx bxl-codepen" target="_blank"></i></a>
+      <a href="https://www.facebook.com/Trickster069/" class="facebook"><i class="selectable bx bxl-facebook" target="_blank"></i></a>
+      <a href="https://www.instagram.com/vineet_k09/" class="instagram"><i class="selectable bx bxl-instagram"></i></a>
+      <a href="https://github.com/vineetk-09" class="github"><i class="selectable bx bxl-github" target="_blank"></i></a>
+      <a href="https://www.linkedin.com/in/vineet-kushwaha-2666b5257/" class="linkedin" target="_blank"><i class="selectable bx bxl-linkedin"></i></a>
     </div>
   </div>
 </section>
@@ -99,7 +99,7 @@
       <!-- general info -->
       <div data-aos="fade-right" class="col-lg-6">
         <h3 class="resume-title">General Info</h3>
-        <div class="resume-item pb-0">
+        <div data-aos="fade-right" class="resume-item pb-0">
           <h4>Details</h4>
           <ul style="list-style-type: none;">
             <li><a href="https://vineetk-09.github.io/" target="_blank"><i class="bx bx-cloud"></i> vineetk-09.github.io</a></li>
@@ -110,18 +110,18 @@
 
         <!-- education -->
         <h3 class="resume-title">Education</h3>
-        <div data-aos="fade-left" class="resume-item">
+        <div data-aos="fade-right" class="resume-item">
           <h4>Bachelors Data Science (ongoing) </h4>
           <h5>2022 - 2026</h5>
           <p><i class="bx bx-cloud bxs-bus-school"></i><em> Acharya Institute of Technology, Bangalore, Karnataka</em></p>
         </div>
-        <div data-aos="fade-left" class="resume-item">
+        <div data-aos="fade-right" class="resume-item">
           <h4>Senior Secondary Certificate (12th) </h4>
           <h5>2022</h5>
           <p><i class="bx bx-cloud bxs-school"></i><em> Kendriya Vidyalaya, Pathankot, Punjab</em></p>
           <p>Achieved 88% marks in CBSE Board Examination</p>
         </div>
-        <div data-aos="fade-left" class="resume-item">
+        <div data-aos="fade-right" class="resume-item">
           <h4>Secondary Certificate (10th)</h4>
           <h5>2020</h5>
           <p><i class="bx bx-cloud bxs-school"></i><em> Kendriya Vidyalaya, Pathankot, Punjab</em></p>
@@ -130,7 +130,7 @@
 
         <!-- hobbies -->
         <h3 class="resume-title">Hobbies</h3>
-        <div data-aos="fade-left" class="resume-item">
+        <div data-aos="fade-right" class="resume-item">
           <ul style="list-style-type: none;">
             <li><i class="bx bx-book-heart"></i> Reading books</li>
             <li><i class="bx bxs-pen"></i> Content Writing</li>
@@ -140,7 +140,7 @@
       </div>
 
       <!-- about me-->
-      <div data-aos="fade-left" class="col-lg-6">
+      <div data-aos="fade-right" class="col-lg-6">
         <h3 class="resume-title"> About Me</h3>
         <div data-aos="fade-right" class="resume-item">
         <p style="line-height: 35px;">Dedicated and skill oriented Engineering Student. Eager to gain first hand indtrial experience in development and data science. Special interest in Technology, Marketing, Python, Web developement, App development, Workshops, Seminars. Seeking for opportunities to learn more and gain more experience.</p>
@@ -183,21 +183,21 @@
     <div class="project-items"> 
 
       <!-- project 1 -->
-      <div class="project-num"> <p class="plol">1</p>
+      <div class="project-num"> <p class="plol"></p>
       <div class="project-wrap">
         <iframe src="assets/pages/button project/button.html" width="100%" height="300px"></iframe>
         <div class="project-info">
           <h4> 1 </h4>
           <p>Simple button animation using basic HTML and CSS <br> Code Snippet<a href="https://codepen.io/Trickster-69/pen/NWOXLqM" target="_blank"> at CodePen</a></p>
             <div class="project-links">
-              <a href="assets/pages/button project/button.html" target="_blank" title="project Details"><i class="bx bx-link-external"></i></a>
+              <a href="assets/pages/button project/button.html" target="_blank" title="project Details"><i class="selectable bx bx-link-external"></i></a>
             </div>
         </div>
       </div> 
       </div>
 
       <!-- project 2 -->
-      <div class="project-num"> <p class="plol">2</p>
+      <div class="project-num"> <p class="plol"></p>
       <div class="project-wrap"> 
         <img src="assets/img/parallax.png" alt="parallax project" height="100%">
         <div class="project-info">
@@ -206,7 +206,7 @@
             This website shows a realistic effect using different background scroll speeds. 
           </p>
           <div class="project-links">
-            <a href="assets/pages/parallax project/index.html" title="project Details"><i class="bx bx-link-external"></i></a>
+            <a href="assets/pages/parallax project/index.html" title="project Details"><i class="selectable bx bx-link-external"></i></a>
           </div>
         </div>
       </div>    
@@ -233,23 +233,23 @@
 </main>
 
 <!-- footer -->
-<footer data-aos="fade-up">
+<footer>
         <h1>Vineet Kushwaha</h1>
         <div class="social-links">
-            <a href="https://codepen.io/Trickster-69" class="twitter">
-              <i class="bx bxl-codepen"></i>
+            <a href="https://codepen.io/Trickster-69" class="selectable twitter">
+              <i class=" bx bxl-codepen"></i>
           </a>
-            <a href="https://www.facebook.com/Trickster069/" class="facebook">
-              <i class="bx bxl-facebook"></i>
+            <a href="https://www.facebook.com/Trickster069/" class="selectable facebook">
+              <i class=" bx bxl-facebook"></i>
           </a>
-            <a href="https://www.instagram.com/vineet_k09/" class="instagram">
-              <i class="bx bxl-instagram"></i>
+            <a href="https://www.instagram.com/vineet_k09/" class="selectable instagram">
+              <i class=" bx bxl-instagram"></i>
           </a>
-            <a href="https://github.com/vineetk-09" class="google-plus">
+            <a href="https://github.com/vineetk-09" class="selectable google-plus">
               <i class="bx bxl-github"></i>
           </a>
-            <a href="https://www.linkedin.com/in/vineet-kushwaha-2666b5257/" class="linkedin">
-              <i class="bx bxl-linkedin"></i>
+            <a href="https://www.linkedin.com/in/vineet-kushwaha-2666b5257/" class="selectable linkedin">
+              <i class=" bx bxl-linkedin"></i>
           </a>
           </div>
         <div class="copyright">
@@ -259,7 +259,7 @@
 
 <!-- preloader & back to top -->
 <div id="preloader"><div id="loader"></div></div>
-<a href="#" class="back-to-top align-items-center justify-content-center" style="display:flex"><i class="bx bx-up-arrow"></i></a>
+<a href="#" class="selectable back-to-top align-items-center justify-content-center" style="display:flex"><i class="bx bx-up-arrow"></i></a>
 <div class="curContain"></div>
 <div class="cursor"></div>
 
