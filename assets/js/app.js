@@ -94,6 +94,23 @@ AOS.init({
 // custom cursor
 const cursor = document.querySelector('.cursor');
 let elSelected = false;
+document.addEventListener('DOMContentLoaded', function() {
+  const body = document.body;
+  function delayHider() {
+    setTimeout(function(){
+      curContain.classList.add("displayNone");
+      cursor.classList.add("displayNone")
+  }, 150); 
+}
+  function delayShower() {
+    setTimeout(function(){
+      curContain.classList.remove("displayNone");
+      cursor.classList.remove("displayNone")
+  }, 150); 
+}
+  body.addEventListener('mouseenter', delayShower);
+  body.addEventListener('mouseleave', delayHider);
+});
 document.onmousemove = (ev) => {
   goto(ev.clientX,ev.clientY);
 }

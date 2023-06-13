@@ -68,10 +68,7 @@ body {
     transform: translate(0%, -70%);
     border-radius: 50px !important;
     opacity: .1;
-    /* background-color: #ffcc00; */
     background-color: white;
-    /* mix-blend-mode: difference; */
-    /* backdrop-filter: invert(100%); */
     border: none;
     z-index: 0;
 }
