@@ -96,7 +96,11 @@ const cursor = document.querySelector('.cursor');
 let elSelected = false;
 document.addEventListener('DOMContentLoaded', function() {
   const body = document.body;
-  function delayHider() {
+  function delayHider(x) {
+    // var width = 10;
+    // var height = x.style.height;
+    // cursor.style.height -= height * 0.1 + "px";
+    // x.style.width -= width * 0.1 + "px";
     setTimeout(function(){
       curContain.classList.add("displayNone");
       cursor.classList.add("displayNone")
@@ -143,7 +147,38 @@ Array.from(document.getElementsByClassName("selectable")).forEach((el) => {
     elSelected = false;
   }
 })
-
+// decrese cursor size 
+// if (cursor.classList.contains("displayNone")) {
+//   decSize(cursor);
+// } else {
+//   incSize(cursor);
+// }
+// function decSize(x) {
+//   var width = x.offsetWidth;
+//   var height = x.offsetHeight;
+//   var timer = setInterval(() =>{
+//     if(width <= 5 ) {
+//       clearInterval(timer);
+//     }
+//     x.style.width = width + "px";
+//     x.style.height = height + "px";
+//     width -= width * 0.1;
+//     height -= height * 0.1;
+//   }, 10);
+// }
+// function incSize(x) {
+//    var width = 10;
+//    var height = 10;
+//    var timer = setInterval(function () {
+//      if (width >= 200 || height >= 200) {
+//       clearInterval(timer);
+//      }
+//      x.style.width = width + "px";
+//      x.style.height = height + "px";
+//      width += width * 0.1;
+//      height += height * 0.1;
+//    }, 10);
+//   }
 // curcontain
 var delayInMs = 200;
 const curContain = document.querySelector(".curContain");

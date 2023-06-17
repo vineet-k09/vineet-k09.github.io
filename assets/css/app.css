@@ -106,11 +106,24 @@ body {
     transition: .5s;
 }
 .jqueryFireFly {
-    width: 32px !important;
-    height: 32px !important;
-    background: url("assets/img/New Piskel.png") !important;
-    background-image: url("assets/img/New Piskel.png") !important;
+    width: 3px !important;
+    height: 3px !important;
+    /* background-color: yellow; */
+    mix-blend-mode: difference;
+    background-image: linear-gradient(#FFFF00 33%, #FFA500 66%, #FF4500 100%);
+    animation: glowing 2s infinite;
 }
+@keyframes glowing {
+    0% {
+      box-shadow:  0 0 20px 1px #ffff00;
+    }
+    50% {
+      box-shadow:  0 0 40px 5px #ffff00;
+    }
+    100% {
+      box-shadow:  0 0 20px 1px #ffff00;
+    }
+  }
 a {
     color: yellow;
 }
@@ -260,7 +273,7 @@ a:hover {
 #bg {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(45deg, #5b4a547d, #522d7882, #1755557e), url("../img/wp2740673-good-background.jpg");
+    background-image: linear-gradient(45deg, #5b4a547d, #522d7882, #1755557e), url("../img/back.jpg");
     background-size: cover;
     position: relative;
     background-attachment: fixed;
