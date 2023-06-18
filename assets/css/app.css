@@ -533,7 +533,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top, #ffcc00, transparent);
+    background: linear-gradient(to top, #ffcc00 75%, transparent);
     background-size: 100% 175%;
 }
 .project .project-wrap .project-info::before {
@@ -580,15 +580,23 @@ section {
     text-align: center;
     z-index: 4;
 }
+.project .project-wrap .project-info p a {
+    color: black;
+    border-bottom: 2px solid black;
+}
+.project .project-wrap .project-info p a:hover {
+    color: yellow;
+    border-color: yellow;
+}
 .project .project-wrap .project-links a {
     color: black;
-    margin: 0 2px;
+    margin: 0 5px;
     font-size: 28px;
     display: inline-block;
     transition: 0.3s;
 }
 .project .project-wrap .project-links a:hover {
-    color: #ffcc00;
+    color: yellow;
 }
 .project .project-wrap:hover::before {
     top: 0;
