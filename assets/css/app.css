@@ -108,7 +108,6 @@ body {
 .jqueryFireFly {
     width: 3px !important;
     height: 3px !important;
-    /* background-color: yellow; */
     mix-blend-mode: difference;
     background-image: linear-gradient(#FFFF00 33%, #FFA500 66%, #FF4500 100%);
     animation: glowing 2s infinite;

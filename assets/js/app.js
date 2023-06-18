@@ -97,10 +97,6 @@ let elSelected = false;
 document.addEventListener('DOMContentLoaded', function() {
   const body = document.body;
   function delayHider(x) {
-    // var width = 10;
-    // var height = x.style.height;
-    // cursor.style.height -= height * 0.1 + "px";
-    // x.style.width -= width * 0.1 + "px";
     setTimeout(function(){
       curContain.classList.add("displayNone");
       cursor.classList.add("displayNone")
@@ -147,39 +143,6 @@ Array.from(document.getElementsByClassName("selectable")).forEach((el) => {
     elSelected = false;
   }
 })
-// decrese cursor size 
-// if (cursor.classList.contains("displayNone")) {
-//   decSize(cursor);
-// } else {
-//   incSize(cursor);
-// }
-// function decSize(x) {
-//   var width = x.offsetWidth;
-//   var height = x.offsetHeight;
-//   var timer = setInterval(() =>{
-//     if(width <= 5 ) {
-//       clearInterval(timer);
-//     }
-//     x.style.width = width + "px";
-//     x.style.height = height + "px";
-//     width -= width * 0.1;
-//     height -= height * 0.1;
-//   }, 10);
-// }
-// function incSize(x) {
-//    var width = 10;
-//    var height = 10;
-//    var timer = setInterval(function () {
-//      if (width >= 200 || height >= 200) {
-//       clearInterval(timer);
-//      }
-//      x.style.width = width + "px";
-//      x.style.height = height + "px";
-//      width += width * 0.1;
-//      height += height * 0.1;
-//    }, 10);
-//   }
-// curcontain
 var delayInMs = 200;
 const curContain = document.querySelector(".curContain");
 document.addEventListener('mousemove', delayMover); 
@@ -208,14 +171,17 @@ linkSpread.forEach(linkSpread => {
 //shadow text
 const ShadowText = document.getElementById('ShadowText');
 const range = 16;
+
 function updateShadow(e) {
   const x = Math.round(e.clientX * range / window.innerWidth) - range / 2;
   const y = Math.round(e.clientY * range / window.innerHeight) - range / 2;
-  gsap.to(ShadowText, {
-    '--x': x,
-    '--y': y,
-  });
+
+  document.documentElement.style.setProperty('--x', x);
+  document.documentElement.style.setProperty('--y', y);
+
+  ShadowText.style.textShadow = `calc(var(--x) * -1px) calc(var(--y) * -1px) 0px #ffeeaa, calc(var(--x) * -2px) calc(var(--y) * -2px) 0px #ffdd55, calc(var(--x) * -3px) calc(var(--y) * -3px) 0px #ffcc00`;
 }
+
 document.body.addEventListener('mousemove', updateShadow);
 
 // end
