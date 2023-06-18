@@ -17,12 +17,12 @@ a em::selection {
     --y: -8px;
 }  
 #ShadowText {
-    color: #fff;
+    color: #fff7d8;
     font-family: 'Glory', sans-serif;
-    font-size: 120px;
+    font-size: 60px;
     font-weight: 600;
     letter-spacing: 4px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-shadow:
       calc(var(--x) * -1) calc(var(--y) * -1) 0px #ffeeaa,
       calc(var(--x) * -2) calc(var(--y) * -2) 0px #ffdd55,
