@@ -9,7 +9,7 @@ window.addEventListener("scroll", f => {
 
 window.addEventListener("scroll", e => {
     let value2 = window.scrollY;
-    mansionImg.style.marginTop = value2 - 2700 + "px";
-    // mansionImg.style.transform = `rotate3d(1,1,1,${value2}deg)`;
-    mansionImg.style.rotate = value2 * 0.2 + "deg";
+    mansionImg.style.marginTop = value2 + "px";
+    let scaleValue = (value2 * 0.2) / 100;
+    mansionImg.style.transform = "scale(" + scaleValue + ")";
 })

@@ -1,5 +1,13 @@
 body, h1, p {
     overflow-x: hidden;
+    margin-left: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin-top: 0;
+    margin-right: 0;
 }
 .container {
     background-color: black !important;
@@ -26,11 +34,11 @@ body, h1, p {
 }
 img#mansion {
     margin: 0;
-    transform: rotate3d(1, 1, 1, 45deg);
+    scale: 0.1;
 }
 #hgback {
     height: 100vh;
-    background-image: url("../images/harry-potter-hogwarts-castle-hd-wallpaper-preview.jpg");
+    background-image: url("../images/hogwarts.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
