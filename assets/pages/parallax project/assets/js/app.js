@@ -1,5 +1,5 @@
 let mainText = document.getElementById("Mtext");
-let mansionImg = document.getElementById("mansion");
+let jSparrowImg = document.getElementById("jSparrow");
 
 window.addEventListener("scroll", f => {
   let value = window.scrollY;
@@ -9,7 +9,7 @@ window.addEventListener("scroll", f => {
 
 window.addEventListener("scroll", e => {
     let value2 = window.scrollY;
-    mansionImg.style.marginTop = value2 + "px";
-    let scaleValue = (value2 * 0.2) / 100;
-    mansionImg.style.transform = "scale(" + scaleValue + ")";
+    jSparrowImg.style.marginTop = value2 + "px";
+    let scaleValue = (value2 * 0.5) / 100;
+    jSparrowImg.style.transform = "scale(" + scaleValue + ")";
 })

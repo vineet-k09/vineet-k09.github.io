@@ -5,6 +5,11 @@ body, h1, p {
 ::-webkit-scrollbar {
     display: none;
 }
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body {
     margin-top: 0;
     margin-right: 0;
@@ -14,8 +19,8 @@ body {
 }
 .start {
     height: 400vh;
-    /* height: 100vh; */
     background-color: black;
+    overflow-y: hidden;
 }
 .start p {
     position: absolute;
@@ -32,7 +37,7 @@ body {
     height: 400vh;
     overflow-y: hidden;
 }
-img#mansion {
+img#jSparrow {
     margin: 0;
     scale: 0.1;
 }
