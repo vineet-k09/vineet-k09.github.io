@@ -16,6 +16,15 @@ a em::selection {
     --x: -8px;
     --y: -8px;
 }  
+.aboutMe ul li span a {
+    color: yellow;
+}
+.aboutMe ul li span a:hover {
+    color: #ffcc00;
+}
+.aboutMe .bxs-chevron-right{
+    color: yellow !important;
+}
 #ShadowText {
     color: #fff7d8;
     font-family: 'Glory', sans-serif;

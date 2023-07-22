@@ -184,5 +184,19 @@ function updateShadow(e) {
 
 document.body.addEventListener('mousemove', updateShadow);
 
+
+// age
+var birthDate = new Date(2005, 0, 18, 0, 0, 0, 0); // January is month 0
+var currentDate = new Date(2023, 6, 22, 0, 0, 0, 0); // July is month 6
+
+var age = currentDate.getFullYear() - birthDate.getFullYear();
+var month = currentDate.getMonth() - birthDate.getMonth();
+var day = currentDate.getDate() - birthDate.getDate();
+
+if (month < 0 || (month === 0 && day < 0)) {
+    age--;
+}
+
+document.getElementById("age").innerHTML = age + ' yrs';
 // end
 })()
