@@ -1,5 +1,20 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="author" content="Vineet"><style>body, h1, p {    overflow-x: hidden;    margin-left: 0;}::-webkit-scrollbar {    display: none;}.center {    display: flex;    align-items: center;    justify-content: center;}body {    margin-top: 0;    margin-right: 0;}.container {    background-color: black !important;}.start {    height: 400vh;    background-color: black;    overflow-y: hidden;}.start p {    position: absolute;    font-size: 100vh;    color: white;    white-space: nowrap;    z-index: 10;    right: -200vw;    top: 50%;    transform: translate(50%,-50%);}#intro {    background-color: black;    height: 400vh;    overflow-y: hidden;}img#jSparrow {    margin: 0;    scale: 0.1;}#hgback {    height: 100vh;    background-image: url("../parallax project/assets/images/hogwarts.jpg");    background-size: cover;    background-attachment: fixed;    background-repeat: no-repeat;}</style><title>Parallax Website</title></head><body><div class="start center">  <p id="Mtext">Parallax Website</p>     <img id="jSparrow" src="../parallax project/assets/images/jack_sparrow.png"  alt="mansion_img">  </div><section id="hgback"></section><script>    let mainText = document.getElementById("Mtext");let jSparrowImg = document.getElementById("jSparrow");window.addEventListener("scroll", f => {  let value = window.scrollY;  mainText.style.marginRight = value * 4 + "px";  mainText.style.marginTop = value * 1  + "px";     }) 
-window.addEventListener("scroll", e => {    let value2 = window.scrollY;    jSparrowImg.style.marginTop = value2 + "px";    let scaleValue = (value2 * 0.5) / 100;    jSparrowImg.style.transform = "scale(" + scaleValue + ")";})</script>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="author" content="Vineet">
+  <link rel="stylesheet" href="../parallax project/assets/css/app.css">
+<title>Parallax Website</title></head>
+<body><div class="slide">
+  <div class="intro">
+    <h1 class="introText center">Hey! 
+      Welcome my friend! <br>
+      Why don't you scroll down and see what's there for you!!
+    </h1>
+    <div class="intro2">
+    <p id="mainText" class="mainText">
+      Parallax Website
+    </p>
+    </div>
+  </div>
+</div>
+<script src="../parallax project/assets/js/app.js"></script>
  <script>
     // Function to scroll from top to bottom and back to top infinitely
     function autoScroll() {
