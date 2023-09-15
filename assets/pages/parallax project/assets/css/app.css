@@ -1,50 +1,44 @@
 body, h1, p {
-    overflow-x: hidden;
-    margin-left: 0;
+    /* overflow-y: hidden; */
+    margin: 0;
 }
 ::-webkit-scrollbar {
     display: none;
 }
-.center {
+.slide {
+    background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: -999;
+    height: 600vh;
+    width: 200vw;
 }
-body {
-    margin-top: 0;
-    margin-right: 0;
-}
-.container {
-    background-color: black !important;
-}
-.start {
-    height: 400vh;
-    background-color: black;
-    overflow-y: hidden;
-}
-.start p {
-    position: absolute;
-    font-size: 100vh;
-    color: white;
-    white-space: nowrap;
-    z-index: 10;
-    right: -200vw;
-    top: 50%;
-    transform: translate(50%,-50%);
-}
-#intro {
-    background-color: black;
-    height: 400vh;
-    overflow-y: hidden;
-}
-img#jSparrow {
+.slide .intro {
     margin: 0;
-    scale: 0.1;
+    padding: 0;
 }
-#hgback {
-    height: 100vh;
-    background-image: url("../images/hogwarts.jpg");
-    background-size: cover;
+.slide .intro h1.introText {
+    margin-left: 50vh;
+    margin-top: 50vh;
+    color: white;
+}
+.slide .intro .intro2 {
+    height: 400vh;
+    width: 200vw;
+    display: flex;
+}
+.slide .intro2 p.mainText {
+    position: relative;
+    font-size: 100vh;
+    text-wrap: nowrap;
+    /* color: pink; */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-left: 100vw;
+    top: -65vh;
+    background-position: fixed;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-position: -10px;
+    background-size: 200%;
+    background-image: url('../images/pexels-pixabay-356830.jpg');
 }
