@@ -1,16 +1,22 @@
 body, h1, p {
-    /* overflow-y: hidden; */
     margin: 0;
+    /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar {
-    display: none;
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
 }
 .slide {
     background-color: black;
     display: flex;
-    z-index: -999;
-    height: 600vh;
-    width: 200vw;
+    width: 100vw;
+    height: 325vh;
 }
 .slide .intro {
     margin: 0;
@@ -21,16 +27,10 @@ body, h1, p {
     margin-top: 50vh;
     color: white;
 }
-.slide .intro .intro2 {
-    height: 400vh;
-    width: 200vw;
-    display: flex;
-}
-.slide .intro2 p.mainText {
+.slide .intro .intro2 p.mainText {
     position: relative;
     font-size: 100vh;
     text-wrap: nowrap;
-    /* color: pink; */
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -41,4 +41,45 @@ body, h1, p {
     background-position: -10px;
     background-size: 200%;
     background-image: url('../images/pexels-pixabay-356830.jpg');
+}
+.slide2 {
+    /* background-color: purple; */
+    /* background-color: black; */
+    height: 400vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+}
+.slide2 .doorBox {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.doorFrame {
+  background-color: red;
+  position:relative;
+  width:220px;
+  height:320px;
+  margin: 0 auto;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.mainDoor {
+  background-color: rgb(173, 26, 26);
+  position:absolute;
+  right: 5px;
+  width:210px;
+  height:310px;
+  top: 5px;
+  transform-origin: left;
+  transition: all 0.5s ease-in-out;
+  transform: 
+  perspective(700px) 
+  translateZ(0px) 
+  translateX(0px) 
+  translateY(0px) 
+  rotateY(0deg);
 }
