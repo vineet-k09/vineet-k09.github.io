@@ -1,7 +1,7 @@
 (function() { 
 "use strict";
 
-// Easy selector helper function
+// easy selector helper function
 const select = (el, all = false) => {
   el = el.trim()
   if (all) {
@@ -11,7 +11,7 @@ const select = (el, all = false) => {
   }
 }
 
-// Easy event listener function
+// easy event listener function
 const on = (type, el, listener, all = false) => {
   let selectEl = select(el, all)
   if (selectEl) {
@@ -23,12 +23,12 @@ const on = (type, el, listener, all = false) => {
   }
 }
 
-// Easy on scroll event listener 
+// easy on scroll event listener 
 const onscroll = (el, listener) => {
   el.addEventListener('scroll', listener)
 }
 
-// Navbar links active state on scroll
+// navbar links active state on scroll
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
@@ -46,7 +46,7 @@ const onscroll = (el, listener) => {
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
-// Back to top button 
+// back to top button 
 let backtotop = select('.back-to-top')
 if (backtotop) {
   const toggleBacktotop = () => {
@@ -60,7 +60,7 @@ if (backtotop) {
   onscroll(document, toggleBacktotop)
 }
 
-// Preloader 
+// preloader 
 let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -168,7 +168,7 @@ linkSpread.forEach(linkSpread => {
   })
 })
 
-//shadow text
+// shadow text
 const ShadowText = document.getElementById('ShadowText');
 const range = 16;
 
