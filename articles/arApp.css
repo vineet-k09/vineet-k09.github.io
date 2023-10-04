@@ -1,0 +1,97 @@
+.article {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+        }
+.goBack {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 5px 0 black;
+    text-decoration: none;
+    position: fixed;
+    z-index: 996;
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    animation: comein 1s ease-in ;
+    animation-iteration-count: 1;
+}  
+.goBack i {
+    font-size: 28px;
+    color: black;
+    line-height: 0;
+}
+.goBack:hover i {
+    transition: 1s;
+    color: #ffcc00;
+}
+.goBack:hover {
+    transition: 1s;
+    background: black;
+    color: #fff;
+}
+.goBack.active {
+    visibility: visible;
+    opacity: 1;
+
+}
+*, ::after, ::before {
+    cursor: none;
+
+}
+.cursor {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background-color: #ffcc00;
+    z-index: 1100;
+    border-radius: 50%;
+    pointer-events: none;
+}
+@media (max-width: 768px) {
+    body {
+      cursor: auto;
+    } 
+}
+@media only screen and (max-width: 700px) {
+    body .curContain {
+        display: none;
+    }
+    body .cursor {
+        width: 15px;
+        height: 15px;
+        transition: 0.1s;
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+.curContain {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    rotate: 45deg;
+    border: 2px solid #ffcc00;
+    left: 0;
+    transform: translate(-70%);
+    pointer-events: none;
+    transition: width 250ms, height 500ms;
+}
+.curContain.large {
+    height: 70px;
+    width: 70px;
+    transition: 0.1s;
+    rotate: -45deg;
+    transform: translate(0%, -70%);
+    border-radius: 50px !important;
+    opacity: .1;
+    background-color: white;
+    border: none;
+    z-index: 0;
+}
