@@ -1,5 +1,6 @@
 body, h1, p {
     margin: 0;
+    background-color: black;
     /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar {
