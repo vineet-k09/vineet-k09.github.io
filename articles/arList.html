@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="Vineet">
     <title>Articles list</title>
-    <link rel="stylesheet" href="arApp.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link id="main-css" rel="stylesheet" href="arApp.css">
+    <!-- <link rel="stylesheet" href="../assestsTred/red.css"> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
@@ -14,10 +16,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
 </head>
 <body>
+  <button id="toggle-button"><div class="ball"></div></button>
     <a class="goBack center selectable" id="goBack"><i class="bx bx-arrow-back"></i></a>
+
     <br><br><br>
-    <h1>Articles</h1>
-    <div id="article-list"></div>
+
+    <h1 class="center">Articles</h1>
+    <hr>
+    <div id="article-list" class=""></div>
 
     <!-- footer -->
     <footer>

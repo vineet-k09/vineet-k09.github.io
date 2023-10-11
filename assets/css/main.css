@@ -238,3 +238,10 @@ h6 {
 .pb-0{
     padding-bottom:0!important
 }
+hr {
+    margin-top: 25px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    width: 40vw;
+    border-color: #ffcc00;
+}
