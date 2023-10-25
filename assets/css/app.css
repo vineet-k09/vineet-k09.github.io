@@ -4,7 +4,7 @@
 
 }
 *::selection:not(a,p a) {
-    background-color: #161f28; 
+    background-color: transparent; 
     color: #ffcc00;
 }
 a::selection,
@@ -85,6 +85,7 @@ body {
     border: none;
     z-index: 0;
 }
+/* selected for cursor */
 .selected {
     background-color: none;
     position: fixed;

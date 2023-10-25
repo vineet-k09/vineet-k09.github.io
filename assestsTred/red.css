@@ -63,9 +63,11 @@ body, h1, p {
 }
 a {
     text-decoration: none;
+    color: #ff3040;
 }
 a:hover {
     text-decoration: none;
+    color: #850000;
 }
 img {
     max-width: 100%;
@@ -130,6 +132,18 @@ img {
     transition: 1s;
     background: black;
     color: #fff;
+}
+.selected {
+    background-color: none;
+    position: fixed;
+    z-index: 1100;
+    border-radius: 50px;
+    border: 3px #ff3040 solid;
+    pointer-events: none;
+    transition: .1s;
+}
+.displayNone {
+    display: none;
 }
 .cursor {
     width: 10px;

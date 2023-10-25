@@ -62,9 +62,11 @@ body, h1, p {
 }
 a {
     text-decoration: none;
+    color: #ffcc00;
 }
 a:hover {
     text-decoration: none;
+    color: yellow;
 }
 img {
     max-width: 100%;
@@ -99,7 +101,7 @@ img {
     position: relative;
     top: -20px;
     left: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 30px;
     height: 30px;
     border: none;
@@ -126,6 +128,19 @@ img {
     transition: 1s;
     background: black;
     color: #fff;
+}
+/* selected for cursor u dumb bitch */
+.selected {
+    background-color: none;
+    position: fixed;
+    z-index: 1100;
+    border-radius: 50px;
+    border: 3px #ffcc00 solid;
+    pointer-events: none;
+    transition: .1s;
+}
+.displayNone {
+    display: none !important;
 }
 .cursor {
     width: 10px;
