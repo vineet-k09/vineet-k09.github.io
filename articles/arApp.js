@@ -154,14 +154,4 @@ linkSpread.forEach(linkSpread => {
   })
 })
 
-// goBack
-const goBack = document.getElementById("goBack");
-goBack.addEventListener("click", () => {
-    if (document.referrer.includes("arList.html")) {
-        window.location.href = "/index.html";
-    } else {
-        window.location.href = "arList.html";
-    }
-});
-
 })();
