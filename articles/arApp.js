@@ -154,19 +154,6 @@ linkSpread.forEach(linkSpread => {
   })
 })
 
-// red changes
-const toggleButton = document.getElementById("toggle-button");
-const mainCssLink = document.getElementById("main-css");
-toggleButton.addEventListener("click", function() {
-    if (mainCssLink.href.endsWith("arApp.css")) {
-        // Remove main.css and add app.css
-        mainCssLink.href = "../assestsTred/red.css";
-    } else {
-        // Remove app.css and add main.css
-        mainCssLink.href = "arApp.css";
-    }
-});
-
 // goBack
 const goBack = document.getElementById("goBack");
 goBack.addEventListener("click", () => {

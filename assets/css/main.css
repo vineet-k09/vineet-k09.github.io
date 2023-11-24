@@ -135,7 +135,7 @@ body::-webkit-scrollbar {
     border: none;
 }
 body::-webkit-scrollbar-track {
-    background-image: linear-gradient(purple, blue, white);
+    background-color: none;
     border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb {

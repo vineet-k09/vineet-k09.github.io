@@ -44,7 +44,7 @@ p {
 }
 body {
     overflow-x: hidden;
-    background-color: #111820;
+    background-color: black;
     color: white;
 }
 @media only screen and (max-width: 700px) {
@@ -217,7 +217,12 @@ a:hover {
 .nav-menu a i,
 .nav-menu a:focus i {
     font-size: 20px;
+    font-size: 20px;
+    outline: 4px #ffcc00 solid;
+    border-radius: 50%;
+    outline-offset: 16.5px;
 }
+
 .nav-menu a span,
 .nav-menu a:focus span {
     padding: 0 5px 0 7px;
@@ -267,7 +272,7 @@ a:hover {
 #bg {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(45deg, #5b4a547d, #522d7882, #1755557e), url("../img/back.jpg");
+    background-color: #000000;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
@@ -278,21 +283,10 @@ a:hover {
     }
 }
 #bg h1 {
-    margin: 0;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #45505b;
-    color: white;
-}  
-#bg p {
-    color: white;
-    margin: 15px 0 0 0;
-    font-size: 26px;
-}
-#bg p span {
-    color: yellow;
-    letter-spacing: 1px;
+    margin: 0; 
+    font-size: 84px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
 }
 #bg .social-links {
     margin-top: 30px;
@@ -322,7 +316,45 @@ a:hover {
       line-height: 24px;
     }
 }
-  
+.grid {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 90vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 40px; /* No gap between grid items */
+    width: 200px; /* Adjust the width to your preference */
+    height: 200px;
+    animation: moveUp 2s linear 1;
+}
+@keyframes colorChange {
+    0% {
+        background-color: #ffffff; /* Initial background color */
+    }
+    25% {
+        background-color: #b1b1b1; /* Color change at 25% of the animation */
+    }
+    50% {
+        background-color: #505050; /* Color change at 50% of the animation */
+    }
+    75% {
+        background-color: #000000; /* Color change at 75% of the animation */
+    }
+    100% {
+        background-color: #919191; /* Back to the initial background color */
+    }
+}
+.grid .ge {
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    border-radius: 50%;
+    width: 6.5px;
+    height: 6.5px;
+    animation: colorChange 5s linear infinite;
+}
+
 /* section */
 section {
     padding: 60px 10px;
@@ -476,7 +508,7 @@ section {
     overflow: hidden;
     z-index: 1;
     border-radius: 10px;
-    border: 5px #111820 solid;
+    border: 5px #ffcc00 solid;
     width: 500px;
     height: 300px;
 }
