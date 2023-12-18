@@ -316,7 +316,16 @@ a:hover {
       line-height: 24px;
     }
 }
-.grid {
+#bg #pot {
+    position: absolute;
+    margin-left: 55vw;
+    margin-top: 10vh;
+    height: 70vh;
+    width: 58vh;
+    border-radius: 74% 40% 46% 54% / 29% 64% 56% 51% ;
+    animation: borderAnimation 5s infinite alternate;
+}
+#bg .grid {
     position: absolute;
     margin-left: 50vw;
     margin-top: 90vh;
@@ -345,7 +354,7 @@ a:hover {
         background-color: #919191; /* Back to the initial background color */
     }
 }
-.grid .ge {
+#bg .grid .ge {
     background-color: transparent;
     border: 1px white solid;
     color: white;
