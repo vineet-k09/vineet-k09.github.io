@@ -306,6 +306,7 @@ a:hover {
     #bg {
       text-align: center;
     }
+    #bg #pot {display: none;}
     #bg h1 {
       font-size: 32px;
       line-height: 36px;
