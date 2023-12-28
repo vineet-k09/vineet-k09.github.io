@@ -19,6 +19,48 @@ body, h1, p {
     margin: 0;
     padding: 0;
 }
+.navbar_h{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+.navbar_h  {
+    margin-right: 20px;
+}
+.navbar_h ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 23px;
+}
+/* .navbar_h ul a:hover{
+    animation: uline 2s 1 ease-in;
+}   */
+.navbar_h ul  a::before {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    width: 0px;
+    height: 2px;
+    margin-top: 26px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+.navbar_h ul a:hover {
+    color: #ffcc00;
+    -webkit-text-stroke: 1px #ffcc00;
+}
+.navbar_h ul  a:hover::before {
+    width: 40px;
+}
+.navbar_h ul a.Active {
+    color: white;
+}
+.navbar_h ul a.Active:hover {
+    color: #ffcc00;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -245,11 +287,18 @@ footer .social-links a:hover {
     visibility: visible;
     opacity: 1;
 }
+.frame {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
 iframe {
     border: none;
     border-radius: 10px;
     margin: none;
     overflow: hidden;
+    height: 40vh;
 }
 body::-webkit-scrollbar {
     width: 5px;

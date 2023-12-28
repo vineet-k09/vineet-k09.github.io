@@ -6,19 +6,47 @@ body, h1, p {
     padding: 0;
     background-color: black;
 }
-.goBack {
-    padding: 2%;
-    height: 30px;
+.navbar_h{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 30px;
-    font-size: 30px;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    margin-top: 10px;
 }
-.goBack a{
+.navbar_h  {
+    margin-right: 20px;
+}
+.navbar_h ul a{
     text-decoration: none;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 23px;
+}
+/* .navbar_h ul a:hover{
+    animation: uline 2s 1 ease-in;
+}   */
+.navbar_h ul  a::before {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    width: 0px;
+    height: 2px;
+    margin-top: 26px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+.navbar_h ul a:hover {
+    color: #ffcc00;
+    -webkit-text-stroke: 1px #ffcc00;
+}
+.navbar_h ul  a:hover::before {
+    width: 40px;
+}
+.navbar_h ul a.Active {
+    color: white;
+}
+.navbar_h ul a.Active:hover {
+    color: #ffcc00;
 }
 .container {
     margin-top: 20px;
