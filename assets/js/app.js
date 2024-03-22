@@ -169,20 +169,20 @@ linkSpread.forEach(linkSpread => {
 })
 
 // shadow text
-const ShadowText = document.getElementById('ShadowText');
-const range = 16;
+// const ShadowText = document.getElementById('ShadowText');
+// const range = 16;
 
-function updateShadow(e) {
-  const x = Math.round(e.clientX * range / window.innerWidth) - range / 2;
-  const y = Math.round(e.clientY * range / window.innerHeight) - range / 2;
+// function updateShadow(e) {
+//   const x = Math.round(e.clientX * range / window.innerWidth) - range / 2;
+//   const y = Math.round(e.clientY * range / window.innerHeight) - range / 2;
 
-  document.documentElement.style.setProperty('--x', x);
-  document.documentElement.style.setProperty('--y', y);
+//   document.documentElement.style.setProperty('--x', x);
+//   document.documentElement.style.setProperty('--y', y);
 
-  ShadowText.style.textShadow = `calc(var(--x) * -1px) calc(var(--y) * -1px) 0px #ffeeaa, calc(var(--x) * -2px) calc(var(--y) * -2px) 0px #ffdd55, calc(var(--x) * -3px) calc(var(--y) * -3px) 0px #ffcc00`;
-}
+//   ShadowText.style.textShadow = `calc(var(--x) * -1px) calc(var(--y) * -1px) 0px #ffeeaa, calc(var(--x) * -2px) calc(var(--y) * -2px) 0px #ffdd55, calc(var(--x) * -3px) calc(var(--y) * -3px) 0px #ffcc00`;
+//}
 
-document.body.addEventListener('mousemove', updateShadow);
+//document.body.addEventListener('mousemove', updateShadow);
 
 
 // age

@@ -34,9 +34,6 @@ body, h1, p {
     -webkit-text-stroke: 1px #ffcc00;
     font-size: 30px;
 }
-/* .navbar_h ul a:hover{
-    animation: uline 2s 1 ease-in;
-}   */
 .navbar_h ul  a::before {
     content: "";
     position: absolute;
@@ -105,11 +102,9 @@ img {
     margin-right: auto;
 }
 .goBack {
-    /* position: fixed; */
     position: relative;
     top: -20px;
     left: 10px;
-    /* cursor: pointer; */
     width: 30px;
     height: 30px;
     border: none;
