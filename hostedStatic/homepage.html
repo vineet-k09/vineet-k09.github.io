@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Vineet">
+    <link rel="stylesheet" href="styles.css">
+    <title>homework</title>
+    <style>
+        .card {
+            position: relative;
+            /* <<< THIS */
+            height: 350px;
+            border-radius: 20px;
+            border: 1px solid black;
+            overflow: hidden;
+            min-width: 30vw;
+            margin: auto;
+            /* optional but makes sure no spillover */
+        }
+
+        embed::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card embed {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            /* disable embed catching mouse clicks */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+        }
+
+        .card-link {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .boxy {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxy">
+        <div>
+            <section id="CSS">
+                <div class="heading">
+                    <p>HTML
+                    </p>
+                </div>
+            </section>
+            <div class="container">
+                <div class="card" style="height: 250px;">
+                    <embed src="html/task1.html">
+                    <a href="html/task1.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 320px;">
+                    <embed src="html/task2.html">
+                    <a href="html/task2.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 650px;">
+                    <embed src="html/task3.html">
+                    <a href="html/task3.html" target="_blank" class="card-link"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <section id="CSS">
+                <div class="heading">
+                    <p>CSS</p>
+                </div>
+            </section>
+            <div class="container">
+                <div class="card" style="height: 250px;">
+                    <embed src="css/task1.html">
+                    <a href="css/task1.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 350px;">
+                    <embed src="css/task2.html">
+                    <a href="css/task2.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 300px;">
+                    <embed src="css/task3.html">
+                    <a href="css/task3.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 300px;">
+                    <embed src="css/task4.html">
+                    <a href="css/task4.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 560px;">
+                    <embed src="css/task5.html">
+                    <a href="css/task5.html" target="_blank" class="card-link"></a>
+                </div>
+                <div class="card" style="height: 350px;">
+                    <embed src="css/task6.html">
+                    <a href="css/task6.html" target="_blank" class="card-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="CSS">
+        <div class="heading">
+            <p>Bootstrap
+            </p>
+        </div>
+    </section>
+    <div class="container" style="min-width:2000px;">
+        <div class="card" style="height: 1950px;" min-width="1800px">
+            <embed src="bootStrap/index.html">
+            <a href="bootStrap/index.html" target="_blank" class="card-link"></a>
+        </div>
+    </div>
+</body>
+
+</html>

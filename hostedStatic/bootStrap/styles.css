@@ -1,0 +1,33 @@
+nav .banner {
+    height: 180px;
+}
+
+#builderz {
+    font-size: 70px;
+    color: pink;
+    margin-top: -20px;
+}
+
+nav .navbar1 {
+    height: 100px;
+    width: 30px;
+}
+
+#navbar {
+    height: 80px;
+    width: 80%;
+    margin: auto;
+    margin-top: -80px;
+}
+
+.background {
+    background-image: url("bg.jpg");
+    height: 75vh;
+    background-size: cover;
+    background-position-y: -62vh;
+}
+
+.card {
+    height: 60vh;
+    border-radius: 0px;
+}

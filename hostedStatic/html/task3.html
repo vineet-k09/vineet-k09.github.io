@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Vineet">
+    <link rel="stylesheet" href="">
+    <title></title>
+    <style>
+        #t3 .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #t3 table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #t3 table td {
+            border-bottom: 1px solid black;
+            padding: 5px;
+            margin-left: -2px;
+            gap: 0px;
+        }
+
+        #t3 table td {
+            border-left: 1px solid black;
+        }
+
+        #t3 input {
+            /* width: 98%; */
+            margin-left: 0px;
+        }
+
+        #t3 .textfield {
+            width: 98%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="t3">
+        <h1>Task 3</h1>
+        <div class="form">
+            <h3>Registration Form</h3>
+            <form action="submit">
+                <table>
+                    <tr>
+                        <td><label for="Fname">First Name</label></td>
+                        <td><input type="text" class="textfield" id="Fname" name="Fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Lname">Last Name</label></td>
+                        <td><input type="text" class="textfield" id="Lname" name="Lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="text" class="textfield" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="text" class="textfield" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="reenterpass">Re-enter Password</label></td>
+                        <td><input type="text" class="textfield" id="reenterpass" name="reenterpass" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="add">Address</label></td>
+                        <td rowspan="3">
+                            <textarea id="add" name="add" rows="4" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    <tr></tr> <!-- Empty row for rowspan -->
+                    <tr></tr> <!-- Empty row for rowspan -->
+                    <tr>
+                        <td><label for="state">State</label></td>
+                        <td><input type="text" class="textfield" id="state" name="state"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Country</label></td>
+                        <td>
+                            <input type="radio" id="india" name="country" value="India">
+                            <label for="india">India</label>
+                            <input type="radio" id="america" name="country" value="America">
+                            <label for="america">America</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Language">Language</label></td>
+                        <td>
+                            <select name="Language" id="Language">
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Telugu">Telugu</option>
+                                <option value="Marathi">Marathi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="terms" name="terms" value="terms">
+                            <label for="terms">I agree to the terms and conditions</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>Log in to <a href="#">Acharya</a> website</p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </form><button type="submit">Register</button>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

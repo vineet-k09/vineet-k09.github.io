@@ -1,0 +1,65 @@
+#CSS .heading p {
+    font-weight: 300;
+    font-size: 100px;
+}
+
+#CSS {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    margin-bottom: -60px;
+    background: linear-gradient(to right, #a83316, #0e977a5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colors 1s infinite ease;
+}
+
+@keyframes colors {
+    0% {
+        background: linear-gradient(to right, #ff4b1e, #096b095e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    25% {
+        background: linear-gradient(to right, #166b48, #1196ca5e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    50% {
+        background: linear-gradient(to right, #a80cad, #094c665e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    75% {
+        background: linear-gradient(to right, #f5914e, #094c665e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    100% {
+        background: linear-gradient(to right, #c0b411, #0ecc1e5e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+}
+
+ol {
+    list-style-type: none;
+}
+
+ol a {
+    text-decoration: none;
+    color: #3a17ff;
+    font-size: 20px;
+    font-weight: 300;
+}
