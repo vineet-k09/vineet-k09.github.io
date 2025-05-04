@@ -28,8 +28,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            pointer-events: none;
-            /* disable embed catching mouse clicks */
         }
 
         .container {
@@ -39,19 +37,6 @@
             padding: 10px;
         }
 
-        .card::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-        }
-
-        .card-link {
-            position: absolute;
-            inset: 0;
-            z-index: 3;
-            cursor: pointer;
-        }
 
         .boxy {
             display: flex;
@@ -65,7 +50,7 @@
     <section>
         <h1>Projects List</h1>
         <h3>HTML</h3>
-        <a href="html/task1.html" target="_blank">Task 1</a>
+        <a href="html/task1.html" target="_blank">Task 1</a> 
         <a href="html/task2.html" target="_blank">Task 2</a>
         <a href="html/task3.html" target="_blank">Task 3</a>
         <h3>CSS</h3>
@@ -75,6 +60,12 @@
         <a href="css/task4.html" target="_blank">Task 4</a>
         <a href="css/task5.html" target="_blank">Task 5</a>
         <a href="css/task6.html" target="_blank">Task 6</a>
+        <h3>Bootstrap</h3>
+        <a href="bootStrap/task1.html" target="_blank">Task 1</a>
+        <a href="bootStrap/task2.html" target="_blank">Task 2</a>
+        <a href="bootStrap/task3.html" target="_blank">Task 3</a>
+        <a href="bootStrap/task4.html" target="_blank">Task 4</a>
+        <a href="bootStrap/task5.html" target="_blank">Task 5</a>
     </section>
     <div class="boxy">
         <div>
@@ -118,7 +109,7 @@
                     <embed src="css/task3.html" target="_blank">
                     <a href="css/task3.html" target="_blank" class="card-link"></a>
                 </div>
-                <div class="card" style="height: 300px;">
+                <div class="card" style="height: 500px;">
                     <embed src="css/task4.html" target="_blank">
                     <a href="css/task4.html" target="_blank" class="card-link"></a>
                 </div>
@@ -126,7 +117,7 @@
                     <embed src="css/task5.html" target="_blank">
                     <a href="css/task5.html" target="_blank" class="card-link"></a>
                 </div>
-                <div class="card" style="height: 350px;">
+                <div class="card" style="height: 450px;">
                     <embed src="css/task6.html" target="_blank">
                     <a href="css/task6.html" target="_blank" class="card-link"></a>
                 </div>
@@ -139,10 +130,50 @@
             </p>
         </div>
     </section>
-    <div class="container" style="min-width:2000px;">
-        <div class="card" style="height: 1950px;" min-width="1800px">
+    <div>
+        <h1 class="big">Task 1</h1>
+    </div>
+
+    <div class="pages">
+        <div class="mains">
             <embed src="bootStrap/task1.html" target="_blank">
             <a href="bootStrap/task1.html" target="_blank" class="card-link"></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="big">Task 2</h1>
+    </div>
+    <div class="pages">
+        <div class="mains">
+            <embed src="bootStrap/task2.html" target="_blank">
+            <a href="bootStrap/task2.html" target="_blank" class="card-link"></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="big">Task 3</h1>
+    </div>
+    <div class="pages">
+        <div class="mains">
+            <embed src="bootStrap/task3.html" target="_blank">
+            <a href="bootStrap/task3.html" target="_blank" class="card-link"></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="big">Task 4</h1>
+    </div>
+    <div class="pages">
+        <div class="mains">
+            <embed src="bootStrap/task4.html" target="_blank">
+            <a href="bootStrap/task4.html" target="_blank" class="card-link"></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="big">Task 5</h1>
+    </div>
+    <div class="pages">
+        <div class="mains">
+            <embed src="bootStrap/task5.html" target="_blank">
+            <a href="bootStrap/task5.html" target="_blank" class="card-link"></a>
         </div>
     </div>
 </body>

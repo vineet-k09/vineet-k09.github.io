@@ -3,6 +3,32 @@
     font-size: 100px;
 }
 
+body {
+    background-color: beige;
+    color: black;
+}
+
+embed {
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: #3b89ff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+
+    color: rgb(0, 0, 0);
+}
+
+a:visited {
+    color: #000000;
+}
+
 #CSS {
     display: flex;
     justify-content: center;
@@ -62,4 +88,20 @@ ol a {
     color: #3a17ff;
     font-size: 20px;
     font-weight: 300;
+}
+
+.pages {
+    width: 90vw;
+    margin: auto;
+}
+
+.pages embed {
+    width: 90vw;
+    height: 90vh;
+
+}
+
+.big {
+    margin-left: 44vw;
+    font-size: 80px;
 }
