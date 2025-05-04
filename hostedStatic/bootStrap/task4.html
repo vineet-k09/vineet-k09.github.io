@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Vineet">
+    <link rel="stylesheet" href="">
+    <title>Form Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .box {
+            border: 0.5px solid black;
+            width: 40vw;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box mt-5">
+        <form id="myForm">
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="firstName" class="form-label">First Name<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-Mail<span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" placeholder="E-Mail Address">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone #<span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                    <input type="tel" class="form-control" id="phone" placeholder="(845)555-1212">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Address<span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-house"></i></span>
+                    <input type="text" class="form-control" id="address" placeholder="Address">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="city" class="form-label">City<span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-building"></i></span>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="state" class="form-label">State<span class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-list"></i></span>
+                    <select class="form-select" id="state">
+                        <option selected>Please select your state</option>
+                        <option value="1">State 1</option>
+                        <option value="2">State 2</option>
+                        <option value="3">State 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label d-block">Do you have hosting?<span class="text-danger">*</span></label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="yes">
+                    <label class="form-check-label" for="hostingYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="no">
+                    <label class="form-check-label" for="hostingNo">No</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="projectDescription" class="form-label">Project Description<span
+                        class="text-danger">*</span></label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                    <textarea class="form-control" id="projectDescription" rows="3"
+                        placeholder="Project Description"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-warning">
+                <i class="bi bi-send"></i> Send
+            </button>
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script>
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+
+            let hasError = false;
+
+            const fields = [
+                { id: 'firstName', name: 'First Name' },
+                { id: 'lastName', name: 'Last Name' },
+                { id: 'email', name: 'E-Mail' },
+                { id: 'phone', name: 'Phone #' }
+            ];
+
+            fields.forEach(field => {
+                const input = document.getElementById(field.id);
+                if (!input.value.trim()) {
+                    console.log(`${field.name} is required.`);
+                    hasError = true;
+                }
+            });
+
+            if (!hasError) {
+                console.log('Form submitted successfully!');
+            }
+        });
+    </script>
+</body>
+
+</html>
