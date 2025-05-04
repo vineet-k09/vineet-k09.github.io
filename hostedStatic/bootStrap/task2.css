@@ -1,0 +1,47 @@
+#BTrends {
+    font-size: 40px;
+    margin: auto;
+    padding: 0px;
+}
+
+nav {
+    box-shadow: black 0px 0px 10px;
+}
+
+#pricing {
+    font-weight: lighter;
+    font-size: 80px;
+}
+
+.card-title {
+    border-bottom: 1px solid rgb(209, 209, 209);
+    background: #bbbbbb;
+    height: 50px;
+    padding-top: 6px;
+}
+
+.price {
+    margin: auto;
+
+}
+
+.price .mo {
+    font-weight: 100;
+    font-size: 25px;
+    margin-left: -5px;
+}
+
+.card-body {
+    gap: -10px;
+    margin: 0px;
+}
+
+.mt-6 {
+    margin-top: 80px !important;
+    width: 70vw;
+    margin: auto;
+}
+
+footer .list {
+    list-style-type: none;
+}
