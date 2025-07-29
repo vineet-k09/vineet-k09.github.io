@@ -1,12 +1,11 @@
 # [🌐 vineet-k09.github.io](https://vineet-k09.github.io)
 
-🚧 **Website Under Upgrade**  
-I'm currently transitioning this portfolio from a **core HTML/CSS/JS** structure to a **modern React-based web application**.  
-Stay tuned for the new version!
+**You have come to the Legacy Version of my website** <br>
+<a href="https://vineetnotfound.vercel.app/" style="display:inline-block; padding:8px 16px; background-color:#28f745; color:#fff; border-radius:5px; text-decoration:none; margin-top:10px;">Visit My Website</a>
 
 ---
 
-👉 **In the meantime, check out the previous site:**  
+👉 **If you want to check out the previous site:**  
 <a href="https://vineet-k09.github.io/indexOLD.html" target="_blank" style="display:inline-block; padding:8px 16px; background-color:#28a745; color:#fff; border-radius:5px; text-decoration:none; margin-top:10px;">🌿 Visit Old Website</a>
 
 ---
